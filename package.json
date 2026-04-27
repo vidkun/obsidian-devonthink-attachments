@@ -1,0 +1,29 @@
+{
+  "name": "obsidian-devonthink-attachments",
+  "version": "0.1.4",
+  "description": "Route pasted and dropped images/PDFs from Obsidian into DEVONthink and insert x-devonthink-item links.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
+    "test": "tsx --test tests/*.test.ts",
+    "package": "npm run build && mkdir -p dist && cp main.js manifest.json styles.css dist/"
+  },
+  "keywords": [
+    "obsidian",
+    "devonthink",
+    "paste",
+    "attachments"
+  ],
+  "author": "Lev Strategy Group",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.23.0",
+    "obsidian": "^1.5.12",
+    "tslib": "^2.6.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.4.5"
+  }
+}

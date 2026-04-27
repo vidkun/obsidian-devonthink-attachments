@@ -1,0 +1,10 @@
+{
+  "id": "devonthink-attachments",
+  "name": "DEVONthink Attachments",
+  "version": "0.1.4",
+  "minAppVersion": "1.5.0",
+  "description": "Route pasted and dropped images/PDFs into DEVONthink and insert x-devonthink-item links.",
+  "author": "Lev Strategy Group",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}
